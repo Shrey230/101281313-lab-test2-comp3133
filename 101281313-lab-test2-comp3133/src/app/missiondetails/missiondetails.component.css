@@ -1,0 +1,21 @@
+.child-card{
+  background-color: rgba(250,240,230,255);
+  border-style: solid;
+  border-color: black;
+  border-radius: 15px;
+}
+.card-header{
+  border-bottom-style: double;
+  border-bottom-width: 5px;
+  margin-bottom: 15px;
+  font-size: xx-large;
+  font-weight: bold;
+
+}
+.header{
+  font-size: large;
+  color: rgb(196, 74, 74);
+  font-weight: bold;
+}
+
+

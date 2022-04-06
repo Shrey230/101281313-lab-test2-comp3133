@@ -1,0 +1,7 @@
+mat-card-header {
+	font-weight: bold;
+	color: rgb(0, 56, 88);
+	
+	font-size: 200%;
+	margin: 50px;
+}

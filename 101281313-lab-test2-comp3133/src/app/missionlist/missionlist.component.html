@@ -1,0 +1,20 @@
+<h1 class="header">SpaceX Mission Launch List</h1>
+<nav>
+  <a
+    (click) = "onClick(mission)"
+    *ngFor="let mission of missions"
+  >
+    <mat-card class="rocket-card">
+      <mat-card-header>
+        <img mat-card-avatar src="{{ mission.links.mission_patch_small }}" />
+        <mat-card-title>{{ mission.mission_name }}</mat-card-title>
+        <mat-card-subtitle>{{ mission.launch_year }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>{{ mission.details }}</mat-card-content>
+      <app-missiondetails
+    *ngIf = "isMission && currentMission == mission"
+    [mission] = "mission"></app-missiondetails>
+    </mat-card>
+  </a>
+</nav>
+<router-outlet></router-outlet>
